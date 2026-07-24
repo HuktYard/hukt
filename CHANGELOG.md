@@ -46,7 +46,7 @@ First public cut of the framework.
   instruction.
 - `@hukt/hook-builder`: composes presets into a deployment spec and simulates
   the outcome with no chain access.
-- `@hukt/resolver` and the `hukt` CLI: one-line integration surface.
+- `@hukt-labs/resolver` and the `hukt` CLI: one-line integration surface.
 
 ### Tooling
 

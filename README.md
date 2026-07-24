@@ -59,7 +59,7 @@ Token-2022's transfer-hook extension is powerful but awkward to adopt:
 | `sdk/account-resolver` | Reads a mint's `ExtraAccountMetaList` and reconstructs the exact ordered extra accounts a transfer needs. |
 | `sdk/composability-adapter` | Appends those resolved accounts to an existing DEX/lending instruction. |
 | `sdk/hook-builder` | Composes presets into a deployment spec and simulates the outcome with no chain access. |
-| `sdk/resolver`, `sdk/cli` | One-line `hukt.resolve(mint)` and a `hukt` command-line tool. |
+| `sdk/resolver`, `sdk/cli` | One-line `resolver.resolve(mint)` (`@hukt-labs/resolver` on npm) and the `hukt` command-line tool (`hukt-cli` on npm). |
 | `libs/*` | Shared Rust taxonomy and the malicious-pattern scoring attestors apply. |
 
 A transfer hook is **verification-only**: it can revert a transfer but has no
@@ -177,7 +177,7 @@ sdk/
   account-resolver/          ExtraAccountMetaList resolution (@hukt/account-resolver)
   composability-adapter/     append resolved extras to an instruction
   hook-builder/              compose presets -> spec, simulate, preview
-  resolver/                  @hukt/resolver one-line integration
+  resolver/                  @hukt-labs/resolver one-line integration (npm)
   cli/                       hukt-cli
 idl/                         exported program IDLs
 docs/                        architecture, hook spec, security
@@ -187,6 +187,19 @@ examples/                    runnable, chain-free SDK examples
 A worked, chain-free example lives in [`examples/simulate-presets.ts`](./examples/simulate-presets.ts):
 it composes four presets into one spec, previews the extra accounts each transfer
 must carry, and simulates which transfer scenarios revert and why.
+
+## Install
+
+The integration surface ships on npm:
+
+```bash
+npm install -g hukt-cli               # inspect / resolve / attest / hook add / build
+npm install @hukt-labs/resolver      # TypeScript resolver + transfer builder
+```
+
+`sdk/cli/README.md` documents every command with captured output; deployment of
+the Anchor program itself always happens through `anchor deploy` under your own
+keypair, never through the CLI.
 
 ## Build and test
 

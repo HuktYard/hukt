@@ -16,7 +16,7 @@ packages/
   account-resolver/      offchain ExtraAccountMetaList resolution (@hukt/account-resolver)
   composability-adapter/ appends resolved extras to a DEX/lending instruction
   hook-builder/          compose presets -> spec, simulate, preview accounts
-  sdk-ts/                @hukt/resolver one-line integration
+  sdk-ts/                @hukt-labs/resolver one-line integration
   cli/                   hukt-cli
 service/                 FastAPI indexer + registry API + Helius DAS proxy
 web/                     Next.js inspector + builder (Route Handler proxies)
@@ -28,7 +28,7 @@ A transfer of a hook-enabled mint flows through four layers:
 
 ```mermaid
 graph LR
-  W["Wallet / DEX"] -->|"resolve(mint)"| R["account-resolver / @hukt/resolver"]
+  W["Wallet / DEX"] -->|"resolve(mint)"| R["account-resolver / @hukt-labs/resolver"]
   R -->|"ExtraAccountMetaList PDA"| M["Token-2022 mint (TransferHook ext)"]
   W -->|"transfer_checked + extra accounts"| T["Token-2022 program"]
   T -->|"Execute CPI"| H["hukt_hooks program"]
