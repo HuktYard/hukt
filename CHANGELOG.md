@@ -13,6 +13,14 @@ All notable changes to HUKT are recorded here. The format follows
 - A chain-free worked example, `examples/simulate-presets.ts`, that composes
   four presets, previews the required extra accounts, and simulates transfers.
 
+### Changed
+
+- `hukt-cli` and `@hukt-labs/resolver` now live in their own repositories
+  ([HuktYard/hukt-cli](https://github.com/HuktYard/hukt-cli),
+  [HuktYard/hukt-resolver](https://github.com/HuktYard/hukt-resolver)) as the
+  canonical source for the published packages. The framework, shared Rust
+  libraries, and lower-level SDK remain here.
+
 ## [0.1.0]
 
 First public cut of the framework.

@@ -2,14 +2,12 @@
   "name": "@hukt-labs/hukt-sdk",
   "version": "0.1.0",
   "private": true,
-  "description": "HUKT TypeScript SDK: offchain ExtraAccountMetaList resolution, composability adapter, hook builder, one-line resolver, and CLI for Solana Token-2022 transfer hooks.",
+  "description": "HUKT TypeScript SDK: offchain ExtraAccountMetaList resolution, composability adapter, and hook builder for Solana Token-2022 transfer hooks.",
   "license": "MIT",
   "workspaces": [
     "account-resolver",
     "composability-adapter",
-    "hook-builder",
-    "resolver",
-    "cli"
+    "hook-builder"
   ],
   "scripts": {
     "typecheck": "npm run typecheck --workspaces --if-present",

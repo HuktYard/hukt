@@ -59,7 +59,7 @@ Token-2022's transfer-hook extension is powerful but awkward to adopt:
 | `sdk/account-resolver` | Reads a mint's `ExtraAccountMetaList` and reconstructs the exact ordered extra accounts a transfer needs. |
 | `sdk/composability-adapter` | Appends those resolved accounts to an existing DEX/lending instruction. |
 | `sdk/hook-builder` | Composes presets into a deployment spec and simulates the outcome with no chain access. |
-| `sdk/resolver`, `sdk/cli` | One-line `resolver.resolve(mint)` (`@hukt-labs/resolver` on npm) and the `hukt` command-line tool (`hukt-cli` on npm). |
+| [hukt-cli](https://github.com/HuktYard/hukt-cli) / [hukt-resolver](https://github.com/HuktYard/hukt-resolver) | One-line `resolver.resolve(mint)` (`@hukt-labs/resolver`) and the `hukt` CLI (`hukt-cli`), each in its own repository. |
 | `libs/*` | Shared Rust taxonomy and the malicious-pattern scoring attestors apply. |
 
 A transfer hook is **verification-only**: it can revert a transfer but has no
@@ -177,8 +177,6 @@ sdk/
   account-resolver/          ExtraAccountMetaList resolution (@hukt/account-resolver)
   composability-adapter/     append resolved extras to an instruction
   hook-builder/              compose presets -> spec, simulate, preview
-  resolver/                  @hukt-labs/resolver one-line integration (npm)
-  cli/                       hukt-cli
 idl/                         exported program IDLs
 docs/                        architecture, hook spec, security
 examples/                    runnable, chain-free SDK examples
@@ -197,9 +195,19 @@ npm install -g hukt-cli               # inspect / resolve / attest / hook add / 
 npm install @hukt-labs/resolver      # TypeScript resolver + transfer builder
 ```
 
-`sdk/cli/README.md` documents every command with captured output; deployment of
-the Anchor program itself always happens through `anchor deploy` under your own
-keypair, never through the CLI.
+The [hukt-cli](https://github.com/HuktYard/hukt-cli) repository documents every
+command with captured output; deployment of the Anchor program itself always
+happens through `anchor deploy` under your own keypair, never through the CLI.
+
+## Related repositories
+
+The end-user packages have their own repositories; this monorepo is the
+framework they build on.
+
+| Repository | Package | What it is |
+| --- | --- | --- |
+| [HuktYard/hukt-cli](https://github.com/HuktYard/hukt-cli) | `hukt-cli` | inspect / resolve / attest / hook add / build from the command line |
+| [HuktYard/hukt-resolver](https://github.com/HuktYard/hukt-resolver) | `@hukt-labs/resolver` | one-line `resolver.resolve(mint)` and transfer builder |
 
 ## Build and test
 
