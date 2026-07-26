@@ -21,6 +21,12 @@
 
 </div>
 
+**$HUKT**
+
+```
+HW8cwBUHhciAuZjuetEvhJ1JcrFzZDSLbhPXSj9pump
+```
+
 ## Overview
 
 HUKT is a framework for [Token-2022 transfer hooks](https://spl.solana.com/token-2022/extensions#transfer-hook)
