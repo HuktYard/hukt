@@ -9,9 +9,9 @@
 [![Site](https://img.shields.io/badge/site-hukt.fun-E8B23A?style=flat-square)](https://hukt.fun)
 [![Docs](https://img.shields.io/badge/docs-architecture%20%7C%20spec%20%7C%20security-9AA0A6?style=flat-square)](./docs)
 [![X](https://img.shields.io/badge/X-%40huktfun-4A4E54?style=flat-square)](https://x.com/huktfun)
-[![CI](https://github.com/hukt-labs/hukt/actions/workflows/ci.yml/badge.svg)](https://github.com/hukt-labs/hukt/actions/workflows/ci.yml)
+[![CI](https://github.com/HuktYard/hukt/actions/workflows/ci.yml/badge.svg)](https://github.com/HuktYard/hukt/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-2FA46A?style=flat-square)](./LICENSE)
-[![Stars](https://img.shields.io/github/stars/hukt-labs/hukt?style=flat-square&color=E8B23A)](https://github.com/hukt-labs/hukt/stargazers)
+[![Stars](https://img.shields.io/github/stars/HuktYard/hukt?style=flat-square&color=E8B23A)](https://github.com/HuktYard/hukt/stargazers)
 
 [![Anchor](https://img.shields.io/badge/Anchor-0.31.1-4A4E54?style=flat-square)](https://www.anchor-lang.com)
 [![Solana](https://img.shields.io/badge/Solana-devnet-2FA46A?style=flat-square)](https://explorer.solana.com/address/4q7Tgd9A1XfTB2i6WLUjmFXNocw6GrshZwcKgarGV9aC?cluster=devnet)

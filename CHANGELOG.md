@@ -62,5 +62,5 @@ First public cut of the framework.
 - CI running `cargo fmt`, `cargo clippy`, the shared-library tests, and the SDK
   typecheck and test suites.
 
-[Unreleased]: https://github.com/hukt-labs/hukt/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/hukt-labs/hukt/releases/tag/v0.1.0
+[Unreleased]: https://github.com/HuktYard/hukt/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/HuktYard/hukt/releases/tag/v0.1.0

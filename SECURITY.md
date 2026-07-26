@@ -14,7 +14,7 @@ as not-yet-supported until a release is tagged.
 Please report privately rather than opening a public issue:
 
 - Open a private vulnerability report through GitHub's
-  ["Report a vulnerability"](https://github.com/hukt-labs/hukt/security/advisories/new)
+  ["Report a vulnerability"](https://github.com/HuktYard/hukt/security/advisories/new)
   flow on this repository, or
 - Reach out over [@huktfun](https://x.com/huktfun) and we will open a private
   advisory to continue.

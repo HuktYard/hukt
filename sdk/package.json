@@ -1,5 +1,5 @@
 {
-  "name": "@hukt-labs/hukt-sdk",
+  "name": "@HuktYard/hukt-sdk",
   "version": "0.1.0",
   "private": true,
   "description": "HUKT TypeScript SDK: offchain ExtraAccountMetaList resolution, composability adapter, and hook builder for Solana Token-2022 transfer hooks.",
